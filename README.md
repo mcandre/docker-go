@@ -19,8 +19,8 @@ monkey
 $ make
 
 $ docker images | grep mcandre/docker-go
-mcandre/docker-go                musl                0d1f77fd8654        36 minutes ago      295 MB
-mcandre/docker-go                gnu                 5211c59dc389        42 minutes ago      537 MB
+mcandre/docker-go                gnu                 14f8d4a0e765        6 minutes ago       521 MB
+mcandre/docker-go                musl                0d1f77fd8654        19 hours ago        295 MB
 ```
 
 # PUBLISH IMAGES
