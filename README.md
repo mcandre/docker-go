@@ -6,13 +6,13 @@
 $ docker pull mcandre/docker-go:glibc
 $ docker pull mcandre/docker-go:musl
 
-$ docker run mcandre/docker-go:glibc sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -d 12140a19190e15"
+$ docker run mcandre/docker-go:glibc sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -decrypt 12140a19190e15"
 monkey
 
 $ docker run mcandre/docker-go:glibc sh -c "go get github.com/mcandre/go-ios7crypt/... && apt-get update && apt-get install -y file && which ios7crypt | xargs file"
 /go/bin/ios7crypt: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
 
-$ docker run mcandre/docker-go:musl sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -d 12140a19190e15"
+$ docker run mcandre/docker-go:musl sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -decrypt 12140a19190e15"
 monkey
 
 $ docker run mcandre/docker-go:musl sh -c "go get github.com/mcandre/go-ios7crypt/... && apk add -U file && which ios7crypt | xargs file"
