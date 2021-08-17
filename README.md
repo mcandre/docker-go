@@ -29,7 +29,7 @@ https://hub.docker.com/r/mcandre/docker-go/
 
 # REQUIREMENTS
 
-* [Docker](https://www.docker.com)
+* [Docker](https://www.docker.com) 19+
 
 # BUILD DOCKER IMAGES
 
