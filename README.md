@@ -4,19 +4,12 @@
 
 ```console
 $ docker pull mcandre/docker-go:glibc
-$ docker pull mcandre/docker-go:musl
 
 $ docker run mcandre/docker-go:glibc sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -decrypt 12140a19190e15"
 monkey
 
 $ docker run mcandre/docker-go:glibc sh -c "go get github.com/mcandre/go-ios7crypt/... && apt-get update && apt-get install -y file && which ios7crypt | xargs file"
 /go/bin/ios7crypt: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
-
-$ docker run mcandre/docker-go:musl sh -c "go get github.com/mcandre/go-ios7crypt/... && ios7crypt -decrypt 12140a19190e15"
-monkey
-
-$ docker run mcandre/docker-go:musl sh -c "go get github.com/mcandre/go-ios7crypt/... && apk add -U file && which ios7crypt | xargs file"
-/go/bin/ios7crypt: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-musl-x86_64.so.1, not stripped
 ```
 
 # COMPILATION WARNING
@@ -37,4 +30,4 @@ For more information on developing docker-go itself, see [DEVELOPMENT.md](DEVELO
 
 # SEE ALSO
 
-[mcandre/docker-gox](https://github.com/mcandre/docker-gox)
+[mcandre/factorio](https://github.com/mcandre/factorio)
